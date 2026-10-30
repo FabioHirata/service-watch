@@ -1,5 +1,12 @@
-node_modules/
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+.venv/
+
 .openai/
+node_modules/
 .DS_Store
 *.log
 test-results/

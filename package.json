@@ -4,6 +4,9 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "check": "node --check dist/app.js && node --check dist/domain.js && node --check dist/i18n.js"
+    "check": "node --check dist/app.js && node --check dist/domain.js && node --check dist/i18n.js && node --check dist/backend.js",
+    "test:python": "python3 -m unittest discover -s tests_python -v",
+    "test:all": "npm test && npm run test:python && npm run check",
+    "dev": "python3 -m backend.server --port 4173"
   }
 }

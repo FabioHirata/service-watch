@@ -1,0 +1,9 @@
+{
+  "allowed_origins": ["http://127.0.0.1:8080"],
+  "services": [
+    {"id": "api", "url": "http://127.0.0.1:8080/fixture/api", "timeout": 2},
+    {"id": "checkout", "url": "http://127.0.0.1:8080/fixture/checkout", "timeout": 2},
+    {"id": "queue", "url": "http://127.0.0.1:8080/fixture/queue", "timeout": 2},
+    {"id": "database", "url": "http://127.0.0.1:8080/fixture/database", "timeout": 2}
+  ]
+}
